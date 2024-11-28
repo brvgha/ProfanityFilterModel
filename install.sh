@@ -18,6 +18,7 @@ pip install python-dotenv > /dev/null 2>&1
 echo 'dotenv Installed'
 pip install pandas > /dev/null 2>&1
 echo 'Pandas Installed'
+cd ~/project
 mkdir -p ./images
 sudo chmod -R +rw ./images
-sudo chown -R $USER:$USER /images/
+sudo chown -R $USER:$USER ./images/
