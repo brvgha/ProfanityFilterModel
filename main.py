@@ -1,4 +1,6 @@
-# setup
+# imports
+from setup import setup
+setup()
 import logging
 import os
 from dotenv import load_dotenv
@@ -10,12 +12,6 @@ import pandas as pd
 import praw as p
 import keras as k
 import tensorflow as tf
-import subprocess
-
-subprocess.run(['chmod', '+x', '/home/brugha/project/install.sh'])
-subprocess.run(['/home/brugha/project/install.sh'], shell=True)
-
-# imports
 
 logger = logging.Logger('./profanityFilterModel.log')
 
